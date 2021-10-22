@@ -6,16 +6,26 @@ function determinOutput(int){
   
   if(int <= 6)
   {
-    alert("you are swift");
+    $("div#output").append("<h3>You're programming language is Swift!</h3>");
+    $("div#output").append("<img class='img' src='img/swift.png'>");
+    $("div#output").append("<p>Information about why you got swift goes here</p>");
   } else if(int > 6 && int <= 8)
   {
-    alert("you are go");
+    $("div#output").append("<h3>You're programming language is Go!</h3>");
+    $("div#output").append("<img class='img' src='img/go.png'>");
+    $("div#output").append("<p>Information about why you got go goes here</p>");
   } else if(int > 8 && int <= 12){
-    alert("you are ruby#");
+    $("div#output").append("<h3>You're programming language is Ruby!</h3>");
+    $("div#output").append("<img class='img' src='img/ruby.png'>");
+    $("div#output").append("<p>Information about why you got ruby goes here</p>");
   } else if(int > 12 && int <= 16){
-    alert("you are javascript");
+    $("div#output").append("<h3>You're programming language is JavaScript!</h3>");
+    $("div#output").append("<img class='img' src='img/javascript.png'>");
+    $("div#output").append("<p>Information about why you got JavaScript goes here</p>");
   } else if(int > 16 && int <= 20 && parseInt($("input:radio[name=question2]:checked").val()) === 1){
-    alert("you are Python");
+    $("div#output").append("<h3>You're programming language is Python!</h3>");
+    $("div#output").append("<img class='img' src='img/python.png'>");
+    $("div#output").append("<p>Information about why you got python goes here</p>");
   } else if(int > 16 && int <= 20){
     alert("you are c#");
   }else {
