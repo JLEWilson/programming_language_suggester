@@ -33,4 +33,4 @@ _A questionnaire designed to help prospect programmers decide what language to l
 
 _If you run into any problems or find a bug, would like to reach me for a seperate reason, feel free to send me an email @jacobleeeugenewilson@gmail.com with details of your issue._
 
-Copyright (c) 10/22/2021 _Jacob Wilson(s)_
+Copyright (c) 10/22/2021 _Jacob Wilson_
