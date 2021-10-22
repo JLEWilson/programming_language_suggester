@@ -3,26 +3,6 @@ function evaluateTotal(num1, num2, num3, num4, num5){
   return total;
 }
 function determinOutput(int){
-  
-  //Check for existing ouptut and remove
-  if($("#outputTitle").length)
-  {
-    $("#outputTitle").remove();
-  } else {
-    // do nothing
-  }
-  if($("#outputImage").length)
-  {
-    $("#outputImage").remove();
-  } else {
-    // do nothing
-  }
-  if($("#outputInfo").length)
-  {
-    $("#outputInfo").remove();
-  } else {
-    // do nothing
-  }
 
   if(int <= 6)
   {
@@ -53,10 +33,33 @@ function determinOutput(int){
   }else {
     warning("You broke my code! How did you even get here?");
   }
+  $("#formOne").hide();
   
-  //Add special conditions for python, html, and maybe some others
+  $("#retakeButton").css("display", "block"); //Using .css instead of show because show defaults to inline block.
 }
-
+function resetQuiz(){
+  //Check for existing ouptut and remove
+  if($("#outputTitle").length)
+  {
+    $("#outputTitle").remove();
+  } else {
+    // do nothing
+  }
+  if($("#outputImage").length)
+  {
+    $("#outputImage").remove();
+  } else {
+    // do nothing
+  }
+  if($("#outputInfo").length)
+  {
+    $("#outputInfo").remove();
+  } else {
+    // do nothing
+  }
+  $("#retakeButton").hide();
+  $("#formOne").show();
+}
 $(document).ready(function(){
   $("#formOne").submit(function(event){
     event.preventDefault();
@@ -70,5 +73,8 @@ $(document).ready(function(){
     
     const totalValue = evaluateTotal(answer1, answer2, answer3, answer4, answer5);
     determinOutput(totalValue);
+  });
+  $("#retakeButton").click(function(){
+    resetQuiz();
   });
 });
