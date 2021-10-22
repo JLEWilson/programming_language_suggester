@@ -1,8 +1,8 @@
-# _{Programming Language Selector}_
+# _Programming Language Selector_
 
-#### By _**{Jacob Wilson}**_
+#### By _**Jacob Wilson**_
 
-#### _{A brief questionnaire built to help new programmers decide what language to learn.}_
+#### _A brief questionnaire built to help new programmers decide what language to learn._
 
 ## Technologies Used
 
@@ -15,7 +15,7 @@
 
 ## Description
 
-_{A questionnaire designed to help prospect programmers decide what language to learn. Takes input into a form with multiple radios, determins best language based on answers, and displays the optimal choice to the user. Allows users to try again should they want to.}_
+_A questionnaire designed to help prospect programmers decide what language to learn. Takes input into a form with multiple radios, determins best language based on answers, and displays the optimal choice to the user. Allows users to try again should they want to._
 
 ## Setup/Installation Requirements
 
@@ -23,7 +23,7 @@ _{A questionnaire designed to help prospect programmers decide what language to 
 * _Clone the repository to your computer_
 * _Open the index.html file in a browser_
 * _OR_
-* _You can find the project on github pages[here](https://jlewilson.github.io/programming_language_selector/)_
+* _You can find the project on github pages [here](https://jlewilson.github.io/programming_language_selector/)_
 
 ## Known Bugs
 
@@ -31,6 +31,6 @@ _{A questionnaire designed to help prospect programmers decide what language to 
 
 ## Licence - [MIT](https://opensource.org/licenses/MIT)
 
-_{If you run into any problems or find a bug, would like to reach me for a seperate reason, feel free to send me an email @jacobleeeugenewilson@gmail.com with details of your issue.}_
+_If you run into any problems or find a bug, would like to reach me for a seperate reason, feel free to send me an email @jacobleeeugenewilson@gmail.com with details of your issue._
 
 Copyright (c) 10/22/2021 _Jacob Wilson(s)_
