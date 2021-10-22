@@ -15,7 +15,7 @@
 
 ## Description
 
-_{A questionnaire designed to help prospect programmers decide what language to learn. Takes input into a form with multiple radios, determins best language based on answers, and displays the optimal choice to the user. Allows users to try again should they want to.}_
+_A questionnaire designed to help prospect programmers decide what language to learn. Takes input into a form with multiple radios, determins best language based on answers, and displays the optimal choice to the user. Allows users to try again should they want to._
 
 ## Setup/Installation Requirements
 
