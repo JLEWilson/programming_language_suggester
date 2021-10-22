@@ -7,27 +7,29 @@ function determinOutput(int){
   if(int <= 6)
   {
     $("div#output").append("<h3>You're programming language is Swift!</h3>");
-    $("div#output").append("<img class='img' src='img/swift.png'>");
+    $("div#output").append("<img class='img' src='img/swift.png' alt='Swift logo.'>");
     $("div#output").append("<p>Information about why you got swift goes here</p>");
   } else if(int > 6 && int <= 8)
   {
     $("div#output").append("<h3>You're programming language is Go!</h3>");
-    $("div#output").append("<img class='img' src='img/go.png'>");
+    $("div#output").append("<img class='img' src='img/go.png' alt='Go logo.'>");
     $("div#output").append("<p>Information about why you got go goes here</p>");
   } else if(int > 8 && int <= 12){
     $("div#output").append("<h3>You're programming language is Ruby!</h3>");
-    $("div#output").append("<img class='img' src='img/ruby.png'>");
+    $("div#output").append("<img class='img' src='img/ruby.png' alt='Ruby logo.'>");
     $("div#output").append("<p>Information about why you got ruby goes here</p>");
   } else if(int > 12 && int <= 16){
     $("div#output").append("<h3>You're programming language is JavaScript!</h3>");
-    $("div#output").append("<img class='img' src='img/javascript.png'>");
+    $("div#output").append("<img class='img' src='img/javascript.png' alt='JavaScript logo.'>");
     $("div#output").append("<p>Information about why you got JavaScript goes here</p>");
   } else if(int > 16 && int <= 20 && parseInt($("input:radio[name=question2]:checked").val()) === 1){
     $("div#output").append("<h3>You're programming language is Python!</h3>");
-    $("div#output").append("<img class='img' src='img/python.png'>");
+    $("div#output").append("<img class='img' src='img/python.png' alt='Python logo.'>");
     $("div#output").append("<p>Information about why you got python goes here</p>");
   } else if(int > 16 && int <= 20){
-    alert("you are c#");
+    $("div#output").append("<h3>You're programming language is c#!</h3>");
+    $("div#output").append("<img class='img' src='img/csharp.png' alt='Python logo.'>");
+    $("div#output").append("<p>Information about why you got c# goes here</p>");
   }else {
     warning("You broke my code! How did you even get here?");
   }
