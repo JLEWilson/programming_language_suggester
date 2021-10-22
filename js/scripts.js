@@ -4,7 +4,7 @@ function evaluateTotal(num1, num2, num3, num4, num5){
 }
 function determinOutput(int){
 
-  if(int <= 6)
+  if(int <= 5)
   {
     $("div#output").append("<h3 id='outputTitle'>You're programming language is Swift!</h3>");
     $("div#output").append("<img class='img' id='outputImage' src='img/swift.png' alt='Swift logo.'>");
@@ -18,7 +18,11 @@ function determinOutput(int){
     $("div#output").append("<h3 id='outputTitle'>You're programming language is Ruby!</h3>");
     $("div#output").append("<img class='img' id='outputImage' src='img/ruby.png' alt='Ruby logo.'>");
     $("div#output").append("<p id='outputInfo'>Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro 'Matz' Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection and just-in-time compilation.</p>");
-  } else if(int > 12 && int <= 16){
+  } else if(int > 12 && int <= 16 && parseInt($("input:radio[name=question3]:checked").val()) === 4){
+    $("div#output").append("<h3 id='outputTitle'>You're programming language is HTML!</h3>");
+    $("div#output").append("<img class='img' id='outputImage' src='img/html.png' alt='Go logo.'>");
+    $("div#output").append("<p id='outputInfo'>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>");
+  }else if(int > 12 && int <= 16){
     $("div#output").append("<h3 id='outputTitle'>You're programming language is JavaScript!</h3>");
     $("div#output").append("<img class='img' id='outputImage' src='img/javascript.png' alt='JavaScript logo.'>");
     $("div#output").append("<p id='outputInfo'>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>");
@@ -69,7 +73,6 @@ $(document).ready(function(){
     const answer3 = parseInt($("input:radio[name=question3]:checked").val());
     const answer4 = parseInt($("input:radio[name=question4]:checked").val());
     const answer5 = parseInt($("input:radio[name=question5]:checked").val());
-    
     
     const totalValue = evaluateTotal(answer1, answer2, answer3, answer4, answer5);
     determinOutput(totalValue);
