@@ -2,8 +2,7 @@ function evaluateTotal(num1, num2, num3, num4, num5){
   const total = num1 + num2 + num3 + num4 + num5;
   return total;
 }
-function determinOutput(int){
-  console.log(int);
+function determinOutput(int, userName){
   if(int <= 5)
   {
     $("div#output").append("<h3 id='outputTitle'>You're programming language is Swift!</h3>");
@@ -38,8 +37,20 @@ function determinOutput(int){
     warning("You broke my code! How did you even get here?");
   }
   $("#formOne").hide();
-  
   $("#retakeButton").css("display", "block"); //Using .css instead of show because show defaults to inline block.
+
+  if(userName === ""){
+    //If they did not enter name in the field do nothing
+  } else{
+    $("div#special").append("<p id='outputMessage'>Dear " + userName + ", I would like to personally thank you for taking the time to fill out my questionnaire! </p>");
+    $("div#special").append('<button type="submit" class="btn" id="specialButton">Reward</button>')
+    $("#specialButton").on("click", function(event){
+      reward();
+    });
+  }
+}
+function reward(){
+  window.location = ("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); // sorry
 }
 function resetQuiz(){
   //Check for existing ouptut and remove
@@ -49,18 +60,27 @@ function resetQuiz(){
   } else {
     // do nothing
   }
+
   if($("#outputImage").length)
   {
     $("#outputImage").remove();
   } else {
     // do nothing
   }
+
   if($("#outputInfo").length)
   {
     $("#outputInfo").remove();
   } else {
     // do nothing
   }
+  if($("#outputMessage").length)
+  {
+    $("#outputMessage").remove();
+  } else {
+    // do nothing
+  }
+
   $("#retakeButton").hide();
   $("#formOne").show();
 }
@@ -68,6 +88,7 @@ $(document).ready(function(){
   $("#formOne").submit(function(event){
     event.preventDefault();
     
+    const userName = $("#userName").val();
     const answer1 = parseInt($("input:radio[name=question1]:checked").val());
     const answer2 = parseInt($("input:radio[name=question2]:checked").val());
     const answer3 = parseInt($("input:radio[name=question3]:checked").val());
@@ -75,7 +96,7 @@ $(document).ready(function(){
     const answer5 = parseInt($("input:radio[name=question5]:checked").val());
     
     const totalValue = evaluateTotal(answer1, answer2, answer3, answer4, answer5);
-    determinOutput(totalValue);
+    determinOutput(totalValue, userName);
   });
   $("#retakeButton").click(function(){
     resetQuiz();

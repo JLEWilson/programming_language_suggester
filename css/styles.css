@@ -25,6 +25,7 @@ h3{
 }
 #retakeButton{
   display: none;
+  margin-bottom: 5%;
 }
 img{
   display: block;
@@ -33,6 +34,14 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
+#outputMessage{
+  text-align: center;
+  font-style: italic;
+}
 #outputInfo{
   text-align: center;
+}
+#specialButton{
+  font-style: italic;
+  background-color: #9898ba49;
 }
