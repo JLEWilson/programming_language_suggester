@@ -3,7 +3,7 @@ function evaluateTotal(num1, num2, num3, num4, num5){
   return total;
 }
 function determinOutput(int){
-
+  console.log(int);
   if(int <= 5)
   {
     $("div#output").append("<h3 id='outputTitle'>You're programming language is Swift!</h3>");
@@ -18,7 +18,7 @@ function determinOutput(int){
     $("div#output").append("<h3 id='outputTitle'>You're programming language is Ruby!</h3>");
     $("div#output").append("<img class='img' id='outputImage' src='img/ruby.png' alt='Ruby logo.'>");
     $("div#output").append("<p id='outputInfo'>Ruby is an interpreted, high-level, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro 'Matz' Matsumoto in Japan. Ruby is dynamically typed and uses garbage collection and just-in-time compilation.</p>");
-  } else if(int > 12 && int <= 16 && parseInt($("input:radio[name=question3]:checked").val()) === 4){
+  } else if(int > 12 && int <= 16 && parseInt($("input:radio[name=question1]:checked").val()) === 4){
     $("div#output").append("<h3 id='outputTitle'>You're programming language is HTML!</h3>");
     $("div#output").append("<img class='img' id='outputImage' src='img/html.png' alt='Go logo.'>");
     $("div#output").append("<p id='outputInfo'>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</p>");
