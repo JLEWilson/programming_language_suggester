@@ -1,4 +1,4 @@
-# _Programming Language Suggester
+# _Programming Language Suggester_
 
 #### By _**Jacob Wilson**_
 
